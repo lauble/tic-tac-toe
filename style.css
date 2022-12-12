@@ -1,6 +1,6 @@
 * {
     background-color:antiquewhite;
-    padding: 5px;
+    padding: 10px;
 }
 
 table, th, td {
@@ -17,7 +17,6 @@ table, th, td {
     height: 100vh;
     font-family: fantasy;
     text-align: center;
-    padding: 10px;
 }
 
 #cell-container {
@@ -50,14 +49,20 @@ table, th, td {
     background-color:lightsalmon;
 }
 
+#scoreboard {
+    margin: auto;
+    padding: 5px;
+}
+
 .cell {
     width: 100px;
     height: 100px;
     box-shadow: 0 0 0 2px;
     border: 1px solid;
-    font-size: 65px;
+    font-size: calc(100px / 1.5);
     cursor: pointer;
-    align-self: center;
+    align-items: center;
+    justify-items: center;
     background-color:darksalmon;
 }
 
