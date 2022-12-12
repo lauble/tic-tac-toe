@@ -1,0 +1,43 @@
+#game-container {
+    font-family: fantasy;
+    text-align: center;
+    padding: 10px;
+}
+
+#cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+}
+
+#player-status {
+    margin: auto;
+    text-align: center;
+    border: 1px solid;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+#restart-btn {
+    background-color: darkmagenta;
+    color: white;
+    font-family: fantasy;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 2px;
+    border: 2px solid;
+    font-size: 65px;
+    cursor: pointer;
+    align-self: center;
+}
+
