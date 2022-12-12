@@ -1,5 +1,5 @@
 const cells = document.querySelectorAll('.cell');
-const gameStatus = document.querySelector('#status');
+const gameStatus = document.querySelector('#game-status');
 const restartBtn = document.querySelector('#restart-btn');
 const clearScoreboardBtn = document.querySelector('#clear-btn');
 let xScore = document.querySelector('#xscore');

@@ -1,5 +1,6 @@
 * {
     background-color:antiquewhite;
+    padding: 5px;
 }
 
 table, th, td {
@@ -28,7 +29,7 @@ table, th, td {
     margin: auto;
 }
 
-#player-status {
+#game-status {
     margin: auto;
     text-align: center;
     width: 200px;
