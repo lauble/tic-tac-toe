@@ -1,3 +1,7 @@
+* {
+    background-color:antiquewhite;
+}
+
 #game-container {
     font-family: fantasy;
     text-align: center;
@@ -16,14 +20,14 @@
 #player-status {
     margin: auto;
     text-align: center;
-    border: 1px solid;
     width: 200px;
     text-align: center;
     padding: 10px;
+    color: red;
 }
 
 #restart-btn {
-    background-color: darkmagenta;
+    background-color:darksalmon;
     color: white;
     font-family: fantasy;
     font-size: 15px;
@@ -39,5 +43,6 @@
     font-size: 65px;
     cursor: pointer;
     align-self: center;
+    background-color:darksalmon;
 }
 
