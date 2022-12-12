@@ -1,6 +1,7 @@
 * {
     background-color:antiquewhite;
     padding: 10px;
+    font-family: Chalkduster, 'Courier New', Courier, monospace;
 }
 
 table, th, td {
@@ -15,7 +16,6 @@ table, th, td {
 #game-container {
     width: 100vw;
     height: 100vh;
-    font-family: fantasy;
     text-align: center;
 }
 
@@ -38,7 +38,6 @@ table, th, td {
 
 #restart-btn, #clear-btn {
     background-color:darksalmon;
-    font-family: fantasy;
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
