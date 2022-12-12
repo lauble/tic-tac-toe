@@ -1,6 +1,8 @@
 const cells = document.querySelectorAll('.cell');
 const playerStatus = document.querySelector('#player-status');
 const restartBtn = document.querySelector('#restart-btn');
+let xScore = document.querySelector('#xscore');
+let oScore = document.querySelector('#oscore');
 
 const winPatterns = [
   [0, 1, 2],
@@ -66,6 +68,12 @@ function checkWinner() {
 
   if (gameWon) {
     playerStatus.textContent = `${currPlayer} wins!`;
+    if (currPlayer === 'X') {
+      xScore.innerHTML = parseInt(xScore.innerHTML) + 1;
+    }
+    if (currPlayer === 'O') {
+      oScore.innerHTML = parseInt(oScore.innerHTML) + 1;
+    }
     running = false;
   } else if (!options.includes('')) {
     playerStatus.textContent = 'Draw!';

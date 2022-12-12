@@ -2,7 +2,13 @@
     background-color:antiquewhite;
 }
 
+table, th, td {
+    border: 1px solid;
+}
+
 #game-container {
+    width: 100vw;
+    height: 100vh;
     font-family: fantasy;
     text-align: center;
     padding: 10px;
@@ -23,12 +29,10 @@
     width: 200px;
     text-align: center;
     padding: 10px;
-    color: red;
 }
 
 #restart-btn {
     background-color:darksalmon;
-    color: white;
     font-family: fantasy;
     font-size: 15px;
     border-radius: 5px;
@@ -39,7 +43,7 @@
     width: 100px;
     height: 100px;
     box-shadow: 0 0 0 2px;
-    border: 2px solid;
+    border: 1px solid;
     font-size: 65px;
     cursor: pointer;
     align-self: center;
