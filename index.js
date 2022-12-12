@@ -1,6 +1,7 @@
 const cells = document.querySelectorAll('.cell');
 const playerStatus = document.querySelector('#player-status');
 const restartBtn = document.querySelector('#restart-btn');
+const clearScoreboardBtn = document.querySelector('#clear-btn');
 let xScore = document.querySelector('#xscore');
 let oScore = document.querySelector('#oscore');
 
@@ -24,6 +25,7 @@ startGame();
 function startGame() {
   cells.forEach((cell) => cell.addEventListener('click', cellClicked));
   restartBtn.addEventListener('click', restartGame);
+  clearScoreboardBtn.addEventListener('click', clearScoreboard);
   playerStatus.textContent = `${currPlayer}'s turn`;
   running = true;
 }
@@ -89,4 +91,9 @@ function restartGame() {
   cells.forEach((cell) => (cell.textContent = ''));
   playerStatus.textContent = `${currPlayer}'s turn`;
   running = true;
+}
+
+function clearScoreboard(){
+    xScore.innerHTML = 0;
+    oScore.innerHTML = 0;
 }

@@ -6,6 +6,11 @@ table, th, td {
     border: 1px solid;
 }
 
+#table-header {
+    background-color: darksalmon;
+    font-weight: bold;
+}
+
 #game-container {
     width: 100vw;
     height: 100vh;
@@ -31,12 +36,17 @@ table, th, td {
     padding: 10px;
 }
 
-#restart-btn {
+#restart-btn, #clear-btn {
     background-color:darksalmon;
     font-family: fantasy;
     font-size: 15px;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#restart-btn:hover, #clear-btn:hover {
+    background-color:lightsalmon;
 }
 
 .cell {
