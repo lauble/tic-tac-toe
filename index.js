@@ -1,5 +1,5 @@
 const cells = document.querySelectorAll('.cell');
-const playerStatus = document.querySelector('#player-status');
+const gameStatus = document.querySelector('#status');
 const restartBtn = document.querySelector('#restart-btn');
 const clearScoreboardBtn = document.querySelector('#clear-btn');
 let xScore = document.querySelector('#xscore');
@@ -26,7 +26,7 @@ function startGame() {
   cells.forEach((cell) => cell.addEventListener('click', cellClicked));
   restartBtn.addEventListener('click', restartGame);
   clearScoreboardBtn.addEventListener('click', clearScoreboard);
-  playerStatus.textContent = `${currPlayer}'s turn`;
+  gameStatus.textContent = `${currPlayer}'s turn`;
   running = true;
 }
 
@@ -47,7 +47,7 @@ function updateCell(cell, index) {
 
 function changePlayer() {
   currPlayer = currPlayer === 'X' ? 'O' : 'X';
-  playerStatus.textContent = `${currPlayer}'s turn`;
+  gameStatus.textContent = `${currPlayer}'s turn`;
 }
 
 function checkWinner() {
@@ -69,7 +69,7 @@ function checkWinner() {
   }
 
   if (gameWon) {
-    playerStatus.textContent = `${currPlayer} wins!`;
+    gameStatus.textContent = `${currPlayer} wins!`;
     if (currPlayer === 'X') {
       xScore.innerHTML = parseInt(xScore.innerHTML) + 1;
     }
@@ -78,7 +78,7 @@ function checkWinner() {
     }
     running = false;
   } else if (!options.includes('')) {
-    playerStatus.textContent = 'Draw!';
+    gameStatus.textContent = 'Draw!';
     running = false;
   } else {
     changePlayer();
@@ -89,7 +89,7 @@ function restartGame() {
   options = ['', '', '', '', '', '', '', '', ''];
   currPlayer = 'X';
   cells.forEach((cell) => (cell.textContent = ''));
-  playerStatus.textContent = `${currPlayer}'s turn`;
+  gameStatus.textContent = `${currPlayer}'s turn`;
   running = true;
 }
 
