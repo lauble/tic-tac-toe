@@ -22,20 +22,22 @@
             <div cellIndex="8" class="cell"></div>
         </div>
         <h4 id="game-status"></h4>
-        <button id="clear-btn">Clear Scoreboard</button>
-        <button id="restart-btn">Restart Game</button>
+        <div id="button-container">
+            <button id="clear-btn">Clear Scoreboard</button>
+            <button id="restart-btn">Restart Game</button>
+        </div>
         <div></div>
         <table id="scoreboard">
             <tr>
                 <th colspan="2" id="table-header">Scoreboard</th>
             </tr>
             <tr>
-                <th>X's Score</th>
-                <th>O's Score</th>
+                <th class="scoreboard-row">X's Score</th>
+                <th class="scoreboard-row">O's Score</th>
             </tr>
             <tr>
-                <td id="xscore">0</td>
-                <td id="oscore">0</td>
+                <td class="scoreboard-row" id="xscore">0</td>
+                <td class="scoreboard-row" id="oscore">0</td>
             </tr>
         </table>
     </div>

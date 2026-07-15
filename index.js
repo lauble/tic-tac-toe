@@ -69,6 +69,7 @@ function checkWinner() {
   }
 
   if (gameWon) {
+    winner = currPlayer;
     gameStatus.textContent = `${currPlayer} wins!`;
     if (currPlayer === 'X') {
       xScore.innerHTML = parseInt(xScore.innerHTML) + 1;
@@ -87,7 +88,7 @@ function checkWinner() {
 
 function restartGame() {
   options = ['', '', '', '', '', '', '', '', ''];
-  currPlayer = 'X';
+  changePlayer();
   cells.forEach((cell) => (cell.textContent = ''));
   gameStatus.textContent = `${currPlayer}'s turn`;
   running = true;
