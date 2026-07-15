@@ -54,9 +54,9 @@ table, th, td {
 
 #game-status {
     margin: auto;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    width: 400px;
+    width: 300px;
     padding: 10px;
     border: 1px solid var(--main-color);
 }
