@@ -1,6 +1,7 @@
-# X's and O's Tic Tac Toe
+# Tic Tac Toe
 
-Created with JavaScript, HTML and CSS. Deployed with GitHub Pages :arrow_right: https://lauble.github.io/tic-tac-toe/ 
+- Created with JavaScript, HTML and CSS
+- Deployed with GitHub Pages :arrow_right: https://lauble.github.io/tic-tac-toe/ 
 
 ## Visuals
 
