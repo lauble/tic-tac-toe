@@ -1,3 +1,16 @@
+:root {
+    --bg-color: #004643;
+    --main-color: #e8e4e6;
+    --secondary-color: #abd1c6;
+    --tertiary-color: #e16162;
+
+    --button-color: #f9bc60;
+    --text-1: #fffffe;
+    --text-2: #001e1d;
+    
+}
+
+
 * {
     background-color:antiquewhite;
     padding: 10px;
